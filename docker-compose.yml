@@ -1,0 +1,34 @@
+version: '3'
+
+services:
+  web:
+    build: ./fastapi
+    ports:
+      - "8000:8000"
+    restart: always
+    volumes:
+      - ./fastapi:/app
+    depends_on:
+      - mongodb
+    links:
+      - mongodb
+  scrapper-1:
+    build: ./scraper
+    ports:
+      - "80:80"
+    volumes:
+      - ./scraper:/app
+    depends_on:
+      - mongodb
+    links:
+      - mongodb
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    restart: always
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=admin
+    volumes:
+      - ./data:/data/db
