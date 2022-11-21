@@ -1,4 +1,4 @@
-##Scraper + FastAPI project + mongodb
+# Scraper + FastAPI project + mongodb
 
 ## To run this project you need to follow the next steps.
 
