@@ -12,7 +12,6 @@ class MainSpider(CrawlSpider):
     user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
 
     estates_seen = set()
-    authors_seen = set()
 
     def start_requests(self):
         yield scrapy.Request(url='https://www.kijiji.ca/b-apartments-condos/charlottetown-pei/c37l1700119', headers={
