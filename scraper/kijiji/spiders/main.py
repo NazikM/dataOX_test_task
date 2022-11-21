@@ -225,7 +225,7 @@ class MainSpider(CrawlSpider):
     def process_author(self, response):
         try:
             resp = json.loads(response.body)[0]['data']['findProfile']
-        except KeyError:
+        except (KeyError, ValueError):
             resp = None
         if not resp:
             yield {
@@ -264,7 +264,7 @@ class MainSpider(CrawlSpider):
     def get_phone_number(self, response):
         try:
             resp = json.loads(response.body)[0]['data']['getDynamicPhoneNumber']
-        except KeyError:
+        except (KeyError, ValueError):
             resp = None
 
         if resp:

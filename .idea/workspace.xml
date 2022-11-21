@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdeb3bb5-5fc2-432f-83d1-b0881c19c4e7" name="Changes" comment="Complete project v2">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="fdeb3bb5-5fc2-432f-83d1-b0881c19c4e7" name="Changes" comment="Update few things">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraper/kijiji/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraper/kijiji/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraper/kijiji/spiders/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraper/kijiji/spiders/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraper/proxy/list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/scraper/proxy/list.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +69,7 @@
       <workItem from="1668931618776" duration="4834000" />
       <workItem from="1668952811082" duration="4604000" />
       <workItem from="1669026047063" duration="1004000" />
-      <workItem from="1669027078637" duration="77000" />
+      <workItem from="1669027078637" duration="3627000" />
     </task>
     <task id="LOCAL-00001" summary="Complete project v1">
       <created>1668698880378</created>
@@ -82,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669026789274</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update few things">
+      <created>1669027190246</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669027190246</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,6 +112,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Complete project v1" />
     <MESSAGE value="Complete project v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete project v2" />
+    <MESSAGE value="Update few things" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update few things" />
   </component>
 </project>
