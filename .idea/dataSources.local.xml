@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="PY-213.6777.50">
+    <data-source name="real_estates@localhost" uuid="c783988b-cd7d-4dc9-8e63-d389ef42cfd9">
+      <database-info product="Mongo DB" version="" jdbc-version="4.2" driver-name="MongoDB JDBC Driver" driver-version="1.17" dbms="UNKNOWN" exact-version="0" />
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>admin</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="database" qname="@">
+            <node kind="schema" qname="@" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+  </component>
+</project>
