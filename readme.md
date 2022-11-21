@@ -2,9 +2,8 @@
 
 ## To run this project you need to follow the next steps.
 
-1) Run git compose file. This will create FastAPI and mongodb apps. **Each scrapper you need to run separately**.
-    >docker compose up
-2) If scrappers are not working, run every separately:
-    > docker build .
-
-    > docker run --rm <image_id>
+1) Clone this repo.
+    `git clone https://github.com/NazikM/dataOX_test_task`
+2) Run your Docker Desktop.
+3) Run git compose file. This will everything you need inside your docker.
+    `docker compose up`
