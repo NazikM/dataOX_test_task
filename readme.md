@@ -8,7 +8,7 @@
 
     Format for proxy list: http://username:pass@ip:port
     
-    The AUTOTHROTTLE options in settings.py are set for 100 proxies. 
+    The AUTOTHROTTLE options in settings.py are set for 100 proxies.  If you'd like to use less or more you should change these params.
     
 >    Note: You can get 10 free proxy with good speed on webshare.io or buy 100 proxies for 1$
     
