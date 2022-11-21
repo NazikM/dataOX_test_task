@@ -1,17 +1,11 @@
-# Define your item pipelines here
-#
-# Don't forget to add your pipeline to the ITEM_PIPELINES setting
-# See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-
-
-# useful for handling different item types with a single interface
+from os import environ
 import pymongo
 
 
 class KijijiPipeline:
 
     def open_spider(self, spider):
-        self.client = pymongo.MongoClient("mongodb://admin:admin@mongodb/?retryWrites=true&w=majority")
+        self.client = pymongo.MongoClient(f"mongodb://{environ['MONGO_INITDB_ROOT_USERNAME']}:{environ['MONGO_INITDB_ROOT_PASSWORD']}@mongodb/?retryWrites=true&w=majority")
         self.db = self.client["kijiji"]
 
     def close_spider(self, spider):

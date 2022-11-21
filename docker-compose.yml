@@ -6,6 +6,7 @@ services:
     ports:
       - "8000:8000"
     restart: always
+    env_file: variables.env
     volumes:
       - ./fastapi:/app
     depends_on:
@@ -18,6 +19,7 @@ services:
       - "80:80"
     volumes:
       - ./scraper:/app
+    env_file: variables.env
     depends_on:
       - mongodb
     links:
@@ -27,8 +29,6 @@ services:
     ports:
       - "27017:27017"
     restart: always
-    environment:
-      - MONGO_INITDB_ROOT_USERNAME=admin
-      - MONGO_INITDB_ROOT_PASSWORD=admin
+    env_file: variables.env
     volumes:
       - ./data:/data/db

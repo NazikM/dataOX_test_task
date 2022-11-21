@@ -143,8 +143,8 @@ class MainSpider(CrawlSpider):
                 real_estate_info['price'] = int(real_estate_info['price'].replace('$', '').replace(',', ''))
             real_estate_info['address'] = response.xpath("//span[@class='address-3617944557']/text()").get()
             real_estate_info['posted'] = response.xpath("//time/@datetime").get()
-
-            real_estate_info['posted'] = datetime.strptime(real_estate_info['posted'], '%Y-%m-%dT%H:%M:%S.%fZ')
+            if real_estate_info['posted']:
+                real_estate_info['posted'] = datetime.strptime(real_estate_info['posted'], '%Y-%m-%dT%H:%M:%S.%fZ')
             real_estate_info['utilities_included'] = response.xpath(
                 "//span[@class='utilities-3542420827']/text()").get()
 
